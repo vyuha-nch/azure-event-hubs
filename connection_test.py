@@ -7,6 +7,7 @@ try:
     producer = EventHubProducerClient.from_connection_string(
         conn_str=CONNECTION_STR,
         eventhub_name=EVENTHUB_NAME
+        transport_type="AmqpOverWebsocket"
     )
     print("Connection successful!")
 except Exception as e:
