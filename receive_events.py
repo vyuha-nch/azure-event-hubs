@@ -2,7 +2,7 @@ import asyncio
 from azure.eventhub.aio import EventHubConsumerClient
 
 CONNECTION_STR = "Endpoint=sb://vyuha-eventhubs.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=0ONi4q5aX9LuxzCltuUMiMSf8p5JX4bwK+AEhBoejy8="
-EVENTHUB_NAME = "Vyuha-EventHubs"
+EVENTHUB_NAME = "trial_eventhub"
 
 async def on_event(partition_context, event):
     print(f"Received event from partition {partition_context.partition_id}: {event.body_as_str()}")

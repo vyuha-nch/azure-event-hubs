@@ -2,7 +2,7 @@ from azure.eventhub import EventHubProducerClient, EventData
 
 # Replace with your Event Hubs Namespace connection string
 CONNECTION_STR = "Endpoint=sb://vyuha-eventhubs.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=0ONi4q5aX9LuxzCltuUMiMSf8p5JX4bwK+AEhBoejy8="
-EVENTHUB_NAME = "Vyuha-EventHubs"
+EVENTHUB_NAME = "trial_eventhub"
 
 def run():
     producer = EventHubProducerClient.from_connection_string(
