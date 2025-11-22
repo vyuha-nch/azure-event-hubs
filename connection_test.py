@@ -1,6 +1,6 @@
 from azure.eventhub import EventHubProducerClient, EventData
 
-CONNECTION_STR = "Endpoint=sb://vyuha-eventhubs.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=0ONi4q5aX9LuxzCltuUMiMSf8p5JX4bwK+AEhBoejy8="
+CONNECTION_STR = "Endpoint=sb://Vyuha-EventHubs.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=0ONi4q5aX9LuxzCltuUMiMSf8p5JX4bwK+AEhBoejy8="
 EVENTHUB_NAME = "trial_eventhub"
 
 try:
