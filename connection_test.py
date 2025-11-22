@@ -11,3 +11,10 @@ try:
     print("Connection successful!")
 except Exception as e:
     print("Error:", e)
+
+with producer:
+    # create a small batch
+    event_data_batch = producer.create_batch()
+    event_data_batch.add(EventData("Test message"))
+    producer.send_batch(event_data_batch)
+    print("Event sent successfully!")
